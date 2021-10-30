@@ -18,7 +18,7 @@ namespace CapaNegocios
             //Método que lista los contratistas
             public DataSet listaUsuarios()
             {
-                cn = objCon.getConecta();
+                cn = objCon.getConecta();//
                 SqlDataAdapter da = new SqlDataAdapter("select * from users", cn);
                 DataSet ds = new DataSet();
                 da.Fill(ds, "Users");
